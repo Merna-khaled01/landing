@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>StarBucks landing website bage</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"> <img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Whats New</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It's Not Just Coffe <br>It'
+                    <span>StarBucks</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                     Cupiditate, illo vitae earum voluptatibus optio laudantium itaque
+                      tempore ullam consequuntur? Dolores cum sint iure quaerat nobis vitae minus
+                       porro commodi eveniet.</p>
+                       <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="img1.png" class="starbucks">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="thumb1.png" onclick="imgSlider('img1.png');changeCircleColor('#017143')"></li>
+            <li><img src="thumb2.png" onclick="imgSlider('img2.png');changeCircleColor('#eb7495')"></li>
+            <li><img src="thumb3.png" onclick="imgSlider('img3.png');changeCircleColor('#d752b1')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="#"></a><img src="facebook.png"></li>
+            <li><a href="#"></a><img src="instagram.png"></li>
+            <li><a href="#"></a><img src="twitter.png"></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.starbucks').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
